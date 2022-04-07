@@ -1,4 +1,4 @@
-#Taller de variables e impresión
+# Taller de variables e impresión
 A continuación se describirán los ejercicios que deberá realizar. Por favor guardar los ejercicios dado que serán requeridos en entregas posteriores. Todos los ejercicios deben estar escritos en PSeInt con el perfil Estricto.
 
 1. Realizar un programa el cual solicite su nombre y apellidos.
