@@ -1,17 +1,20 @@
 Proceso figura_1
-	Definir filas Como Entero;
-	Definir i Como Entero;
-	Definir j Como Entero;
+	Definir nfilas Como Entero;
+	Definir asterisco Como Caracter;
+	Definir fila Como Entero;
+	Definir k Como Entero;
 	
-	Escribir "Ingrese la cantidad de filas (10):";
-	Leer filas;
+	Escribir Sin Saltar "Escriba el número de filas";
+	Leer nfilas;
 	
-	Escribir "Figura resultante:";
-	
-	Para i<-1 Hasta filas Con Paso 1 Hacer
-		Para j<-1 Hasta i Con Paso 1 Hacer
-			Escribir "*" sin saltar;
+	//Para para el numero de filas
+	Para fila<-1 Hasta nfilas Con Paso 1 Hacer
+		asterisco<-""; 
+		//Para el numero de asteriscos en cada fila
+		Para k<-1 Hasta fila Con Paso 1 Hacer
+			asterisco<-Concatenar(asterisco, "*");
 		FinPara
-		Escribir "";
+		// Escribir los asteriscos acumulados
+		Escribir  asterisco;
 	FinPara
 FinProceso
