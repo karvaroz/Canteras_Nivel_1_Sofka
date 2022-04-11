@@ -1,6 +1,6 @@
 Proceso bancoFiel
 	Definir opcionCliente Como Entero;
-	Definir saldoJuan Como Real;
+	Definir saldo Como Real;
 	Definir ingreso Como Real;
 	Definir retiro Como Real;
 	
@@ -15,9 +15,9 @@ Proceso bancoFiel
 	Segun opcionCliente Hacer
 		1:
 			Escribir "Escribir saldo actual: ";
-			Leer saldoJuan;
+			Leer saldo;
 			Escribir "Titular Cuenta: Juan Castro";
-			Escribir "Saldo Cuenta: ", saldoJuan;
+			Escribir "Saldo Cuenta: ", saldo;
 			Escribir "1. Realizar ingreso";
 			Escribir "2. Realizar retiros";
 			Leer opcionCliente;
@@ -25,23 +25,23 @@ Proceso bancoFiel
 				1:
 					Escribir "Escriba el valor del ingreso:";
 					Leer ingreso;
-					Escribir "El nuevo saldo de la cuenta de Juan es: ", (saldoJuan + ingreso);
+					Escribir "El nuevo saldo de la cuenta de Juan es: ", (saldo + ingreso);
 				2:
 					Escribir "Escriba el valor del retiro:";
 					Leer retiro;
-					Si retiro > saldoJuan Entonces
-						Escribir "El valor del retiro supera tu saldo actual: ", saldoJuan;
+					Si retiro > saldo Entonces
+						Escribir "El valor del retiro supera tu saldo actual: ", saldo;
 					SiNo
-						Escribir "El nuevo saldo de la cuenta de Juan es: ", (saldoJuan - ingreso);
+						Escribir "El nuevo saldo de la cuenta de Juan es: ", (saldo - ingreso);
 					FinSi
 				De Otro Modo:
 					Escribir "Opción no válida.";
 			FinSegun
 		2:
 			Escribir "Escribir saldo actual: ";
-			Leer saldoMaria;
+			Leer saldo;
 			Escribir "Titular Cuenta: Maria Perez";
-			Escribir "Saldo Cuenta: ", saldoMaria;
+			Escribir "Saldo Cuenta: ", saldo;
 			Escribir "1. Realizar ingreso";
 			Escribir "2. Realizar retiros";
 			Leer opcionCliente;
@@ -49,14 +49,14 @@ Proceso bancoFiel
 				1:
 					Escribir "Escriba el valor del ingreso:";
 					Leer ingreso;
-					Escribir "El nuevo saldo de la cuenta de Maria es: ", (saldoMaria + ingreso);
+					Escribir "El nuevo saldo de la cuenta de Maria es: ", (saldo + ingreso);
 				2:
 					Escribir "Escriba el valor del retiro:";
 					Leer retiro;
-					Si retiro > saldoJuan Entonces
-						Escribir "El valor del retiro supera tu saldo actual: ", saldoMaria;
+					Si retiro > saldo Entonces
+						Escribir "El valor del retiro supera tu saldo actual: ", saldo;
 					SiNo
-						Escribir "El nuevo saldo de la cuenta de Maria es: ", (saldoJuan - ingreso);
+						Escribir "El nuevo saldo de la cuenta de Maria es: ", (saldo - retiro);
 					FinSi
 				De Otro Modo:
 					Escribir "Opción no válida.";

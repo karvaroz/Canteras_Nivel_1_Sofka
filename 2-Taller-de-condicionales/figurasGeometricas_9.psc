@@ -41,7 +41,7 @@ Proceso figurasGeometricas
 			Escribir "Escribe la altura del trapecio:";
 			Leer altura;
 			areaTp <- ((baseMayor + baseMenor) / 2) * altura;
-			Escribir "El área del triángulo es: ", areaTp;
+			Escribir "El área del trapeceo es: ", areaTp;
 		De Otro Modo:
 			Escribir "Opción no válida.";
 	FinSegun
